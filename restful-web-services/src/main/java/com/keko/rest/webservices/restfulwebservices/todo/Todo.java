@@ -8,6 +8,7 @@ public class Todo {
 	private String description;
 	private Date target;
 	private boolean isDone;
+	
 	public long getId() {
 		return id;
 	}
@@ -47,6 +48,7 @@ public class Todo {
 		this.target = target;
 		this.isDone = isDone;
 	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -54,6 +56,7 @@ public class Todo {
 		result = prime * result + (int) (id ^ (id >>> 32));
 		return result;
 	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
