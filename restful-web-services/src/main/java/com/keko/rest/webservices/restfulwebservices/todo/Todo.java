@@ -6,7 +6,7 @@ public class Todo {
 	private long id;
 	private String username;
 	private String description;
-	private Date target;
+	private Date targetDate;
 	private boolean isDone;
 	
 	protected Todo() {
@@ -31,11 +31,11 @@ public class Todo {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public Date getTarget() {
-		return target;
+	public Date getTargetDate() {
+		return targetDate;
 	}
-	public void setTarget(Date target) {
-		this.target = target;
+	public void setTargetDate(Date targetDate) {
+		this.targetDate = targetDate;
 	}
 	public boolean isDone() {
 		return isDone;
@@ -44,12 +44,12 @@ public class Todo {
 		this.isDone = isDone;
 	}
 	
-	public Todo(long id, String username, String description, Date target, boolean isDone) {
+	public Todo(long id, String username, String description, Date targetDate, boolean isDone) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.description = description;
-		this.target = target;
+		this.targetDate = targetDate;
 		this.isDone = isDone;
 	}
 	
