@@ -39,10 +39,13 @@ public class TodoResource {
 	}
 	
 	@GetMapping("/user/{username}/todos/{id}")
-	public Todo getTodo(@PathVariable String username, 
+	public ResponseEntity<Todo> getTodo(@PathVariable String username, 
 			@PathVariable int id){
 		Todo todo = todoService.findById(id);
-		return todo;
+		if (todo == null) {
+			return ResponseEntity.notFound().build();
+		}
+		return ResponseEntity.ok(todo);
 	}
 	
 	
