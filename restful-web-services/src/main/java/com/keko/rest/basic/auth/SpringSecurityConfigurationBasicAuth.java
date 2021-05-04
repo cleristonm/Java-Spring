@@ -1,4 +1,4 @@
-package com.keko.rest.webservices.restfulwebservices.basic.auth;
+package com.keko.rest.basic.auth;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
