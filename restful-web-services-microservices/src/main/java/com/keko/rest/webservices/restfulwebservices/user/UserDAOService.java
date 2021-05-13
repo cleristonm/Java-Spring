@@ -40,5 +40,12 @@ public class UserDAOService {
 		}
 		return null;
 	}
+
+	public User deleteById(Integer id) {
+		User user = findOne(id);
+		users.remove(user);		
+		return user;
+		
+	}
 	
 }
